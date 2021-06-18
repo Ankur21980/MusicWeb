@@ -73,7 +73,7 @@ header a{
     
 }
 header a:hover{
-  color: rgb(255,215,0);
+  color: #c9b078;
 
 }
 .center{
@@ -112,7 +112,10 @@ header nav ul li a {
   line-height: 50px;
   cursor: pointer;
   display: none;
+  font-style: oblique;
   margin-left: 50px;
+  font-size: .75em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -137,19 +140,50 @@ header nav ul li a {
 }
 /*Header end*/
 /* Content */
+
+.container{
+  background: url("../images/main-img.png");
+  color: #000;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 0%;
+  width: 40%;
+  top: 3em;
+  left: 27em;
+}
+
+.about-container{
+  background: url("../images/about-img.jpg");
+  color: #000;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 0%;
+  width: 30%;
+  top: 4em;
+  left: 32em;
+  z-index: -1;
+}
+
+
 .main-img{
 
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 5em;
 }
 @media(max-width: 1610px) {
   .main-img{
-  width: 75%;
-  height: 382px;
-  left: 160px;
-  
-  margin-bottom: 15px;
+
+    width: 75%;
+    height: 382px;
+    left: 160px;
+    
+    margin-bottom: 15px;
   }
 }
 
@@ -166,19 +200,24 @@ footer{
   display: flex;
   justify-content: center;
 }
+.container {
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
 
 .link__container{
   display: flex;
   justify-content: center;
   margin-bottom: auto;
-  position: absolute;
-  bottom: 30px;
+  position: relative;
+  top: 3em;
+  bottom: 4empx;
 }
 a.animated-button:link, a.animated-button:visited {
 	position: relative;
 	display: block;
 	margin: 30px auto 0;
-	padding: 14px 15px;
+	padding: 24px 15px;
 	color: #fff;
 	font-size:14px;
 	font-weight: bold;
@@ -239,7 +278,8 @@ a.animated-button.victoria-one {
   border: 3px solid #6f4728;
 }
 a.animated-button.victoria-one:after {
-	background: #D24D57;
+	background: #c9b078;
+  color: white;
 	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
@@ -293,13 +333,15 @@ a.animated-button.victoria-one:after {
   justify-content: center;
   flex: 1 1 50%;
 }
-.about-me__img-img{
-  width: 60%;
-  height: auto;
-}
 .about-me__info-text{
   color: white;
   font-size: 1.125rem;
+  text-align: center;
+}
+
+.about-me__item p{
+  text-align: center;
+  padding: 5em;
 }
 
 /* About me page end */
@@ -315,7 +357,7 @@ a.animated-button.victoria-one:after {
 	padding: 5px;
 }
 .socialbtns, .socialbtns ul, .socialbtns li {
-	margin: 0 ;
+	margin-top: 1.5em;
 	padding: 5px;
 }
 
@@ -426,7 +468,8 @@ a.animated-button.victoria-one:after {
 {
 
     .logo{
-        width: 50%;
+        width: 80%;
+        height: 30%;
     }
     .quick__link{
         font-size: 15px;
@@ -436,16 +479,23 @@ a.animated-button.victoria-one:after {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .about-me__item p{
+        padding: 2em;
+        font-size: 18px;
+        justify-content: center;
+    }
+
     .about-me__info-text{
         color: white;
-        font-size: 20px;
+        /* font-size: px; */
     }
     .music__title{
         font-size: 10px;
     }
-    .center{
+    /* .center{
         justify-content: space-around;
-    }
+    } */
     header{
       display: grid;
       grid-template-columns: repeat(8);
@@ -465,10 +515,7 @@ a.animated-button.victoria-one:after {
       display: flex;
       justify-content: center;
     }
-    .logo{
-      height: 150px;
-      width: 150px;
-    }
+    
 }
 
 /* 
@@ -525,6 +572,34 @@ a.animated-button.victoria-one:after {
 @media(max-width: 1080px)
 {
 
+  .container {
+        background: url(../images/main-img.png);
+        color: #000;
+        background-color: #000;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 0%;
+        width: 80%;
+        left: 1.30em;
+        z-index: -1;
+    }
+
+    .about-container{
+      background: url("../images/about-img.jpg");
+      color: #000;
+      background-color: #000;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      height: 0%;
+      width: 80%;
+      top: 2em;
+      left: 2em;
+      z-index: -1;
+    }
+    
+
     .logo{
         width: 50%;
     }
@@ -558,18 +633,30 @@ a.animated-button.victoria-one:after {
   /* padding-right: 100px; */
 
     }
+
+    
+    .img{
+      width: 100%;
+      height: 100%;
+    }
+
     .main-img{
+      /* background: url("../images/main-img1.png"); */
       position: relative;
-      left: 45px;
+      left: 40px;
       position: relative;
       display: flex;
       justify-content: center;
+      z-index: -1;
     }
     .logo{
-      height: 80px;
-      width: 80px;
+      height: 150px;
+      width: 150px;
     }
 
+    .menu-toggle:hover{
+      color: #c9b078;
+    }
     .menu-toggle {
       display: block;
       margin-left: 20px;
@@ -582,7 +669,7 @@ a.animated-button.victoria-one:after {
   
     header nav {
       position: absolute;
-      top: 120px;
+      top: 200px;
       left: -100%;
       width: 100%;
       height: calc(100vh - 50px);
@@ -598,9 +685,7 @@ a.animated-button.victoria-one:after {
       display: block;
       text-align: center;
     }
-    .main-img{
-      z-index: -1;
-    }
+
 }
 
 
