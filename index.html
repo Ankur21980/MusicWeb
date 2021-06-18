@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width = device-width,initial-scale = 1.0" />
+    <title>Siddharth Shankar Music</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="css/maybestyle.css" />
+</head>
+
+<body>
+    <img class="logo" src="images/ss logo1.png" />
+    <header style="text-align: center;">
+        <!-- <nav>
+            <div class="nav-items">
+                <div class="item item_1 center active"><a href="about-me.html"
+                    style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">ABOUT&nbsp;ME</a>
+                </div>
+                <div class="item item_2 center"><a href="store.html"
+                        style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">STORE</a>
+                </div>
+                <div class="item item_3 center"><a href="listen-here.html"
+                        style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">MUSIC+VIDEOS</a></div>
+                <div class="item item_4 center"><a href="reaction.html"
+                        style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">REACTION&nbsp;VIDEOS</a></div>
+                <div class="item item_5 center"><a href="mailto:contact@siddharthshankar.in"
+                        style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">CONTACT&nbsp;ME</a></div>
+                <div class="item item_6 center"><a href="https://www.youtube.com/user/Sidvidrocks" target="_blank"
+                        style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">SUBSCRIBE</a>
+                </div>
+            </div>
+        </nav> -->
+        <nav>
+            <ul style="text-align: center;">
+                <li class="item_1 center"><a href="about-me.html" class="active" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">ABOUT&nbsp;ME</a></li>
+                <li class="item_2 center"><a href="store.html" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">STORE</a></li>
+                <li class="item_3 center"><a href="listen-here.html" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">MUSIC+VIDEOS</a></li>
+                <li class="item_4 center"><a href="reaction.html" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">REACTION&nbsp;VIDEOS</a></li>
+                <li class="item_5 center"><a href="mailto:contact@siddharthshankar.in" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">CONTACT&nbsp;ME</a></li>
+                <li class="item_6 center"><a href="https://www.youtube.com/user/Sidvidrocks" target="_blank" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold;">SUBSCRIBE</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <span class="menu-toggle menu">Menu</span>
+    </header>
+
+
+
+    <div class="container">
+        <div class="main-img">
+            <img class="img"
+                src="data:image/jpeg;base64,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">
+        </div>
+    </div>
+    <div class="link__container" style="position: relative; bottom: 50px;">
+        <a class="quick__link animated-button victoria-one" target="_blank"
+            href="https://www.youtube.com/watch?v=MlkXAQxxTVQ">Listen Now</a>
+    </div>
+    <div class="social-media">
+        <br />
+        <footer>
+
+            <div align="center" class="socialbtns">
+                <ul>
+                    <li><a href="https://www.facebook.com/sidvidrocksu" target="_blank"
+                            class="fa fa-lg fa-facebook"></a></li>
+                    <li><a href="https://twitter.com/sidvidrocks" target="_blank" class="fa fa-lg fa-twitter"></a></li>
+                    <li><a href="#" target="_blank" class="fa fa-lg fa-linkedin"></a></li>
+                    <li><a href="https://www.instagram.com/sidvidrocks/" target="_blank"
+                            class="fa fa-lg fa-instagram"></a></li>
+                    <li><a href="https://www.youtube.com/c/SiddharthShankarPrank" target="_blank"
+                            class="fa fa-lg fa-youtube"></a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+    <div class="conditions">
+        <div>&copy; COPYRIGHT 2021 SIDDHARTH SHANKAR
+            |
+            PRIVACY POLICY
+            |
+            TERMS OF USE
+            |
+            COOKIES POLICY
+            |
+            DO NOT SELL MY PERSONAL INFORMATION
+        </div>
+    </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+
+</html>
