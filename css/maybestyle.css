@@ -311,6 +311,7 @@ a.animated-button.victoria-one:after {
 
 .listen-music__logo{
   display: flex;
+  text-align: center;
   justify-content: center;
 }
 .listen-music__logo-logo{
@@ -426,7 +427,7 @@ a.animated-button.victoria-one:after {
     --fs-body: 1.125rem;
   }
 }
-@media(max-width: 1200px){
+/* @media(max-width: 1200px){
   .about-me__item{
     flex: 1 1 100%;
   }
@@ -443,7 +444,7 @@ a.animated-button.victoria-one:after {
   }
   iframe{
     width: 350px;
-  }
+  } */
   /* header{
       grid-template-columns: repeat(8,1fr);
       grid-template-rows: 1fr 1fr;
@@ -453,10 +454,10 @@ a.animated-button.victoria-one:after {
       row-gap: 20px;
       column-gap: 10px;
   } */
-  header a{
+  /* header a{
     font-size: 16px;
   }
-}
+} */
 @media(max-width: 1610px){
   header a{
     font-size: 15px;
@@ -568,6 +569,16 @@ a.animated-button.victoria-one:after {
       width: 150px;
     }
 } */
+@media only screen and (max-width: 1399px) and (min-width: 1081px){
+
+      header {
+        margin-left: 45em;
+      }
+
+      .container {
+        left: 23em;
+      }
+}
 
 @media(max-width: 1080px)
 {
