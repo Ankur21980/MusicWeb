@@ -143,7 +143,7 @@ header nav ul li a {
 
 img{
   width: 50%;
-  height: auto;
+  /* height: auto; */
 }
 a{
     color: var(--clr-light);
@@ -373,7 +373,7 @@ a.animated-button.victoria-one:after {
 }
 
 @media screen and (max-width: 992px) {
-    .logo{
+  .logo{
       width: 50%;
       height: 150px;
       width: 150px;
@@ -437,7 +437,7 @@ a.animated-button.victoria-one:after {
     top: 200px;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: 100%;
     transition: 0.5s;
     background:#000;
   }
@@ -449,5 +449,9 @@ a.animated-button.victoria-one:after {
   header nav ul {
     display: block;
     text-align: center;
+  }
+
+  .col {
+    width: 360px;
   }
 }
